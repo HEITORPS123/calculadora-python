@@ -30,10 +30,10 @@ class TestNBAStatsCalculator(unittest.TestCase):
         self.calculadora.field_goal_made = 6
         self.assertEqual(self.calculadora.calcular_2pt_percent(), 0.5)
 
-    '''def calcular_ts_percent_test(self):
-        self.calculadora.assists = 6
-        self.calculadora.turnover = 12
-        self.assertEqual(self.calculadora.calcular_ts_percent(), 0.5)'''
+    def test_calcular_ts_percent(self):
+        self.calculadora.points = 20
+        self.calculadora.field_goal_attempted = 12
+        self.assertEqual(self.calculadora.calcular_ts_percent(), 0.8333333333333334)
 
 if __name__ == '__main__':
     unittest.main()
