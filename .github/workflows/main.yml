@@ -16,4 +16,4 @@ jobs:
           python-version: 3.x
 
       - name: Run unittests
-        run: python -m unittest tests/*.py
+        run: python -m unittest calculadora_nba_test.py
